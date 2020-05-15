@@ -1,0 +1,741 @@
+// 公司信息
+.companyInfo {
+  height: 100%;
+  .item {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+    .com_title {
+      font-weight: 700;
+      font-size: 18px;
+      padding: 8px;
+      position: relative;
+      &::before {
+        top: 14px;
+        left: 0;
+      }
+    }
+    .com_info {
+      padding-left: 70px;
+      width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .info_item {
+        width: 50%;
+        margin-bottom: 15px;
+        span {
+          display: inline-block;
+          line-height: 36px;
+        }
+        span:first-of-type {
+          width: 120px;
+          text-align: right;
+          color: #999;
+        }
+        span:last-of-type {
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+// 企业总览
+.enterprise {
+  .money {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    .left {
+      display: flex;
+      .item {
+        height: 220px;
+        border-radius: 10px;
+        background: url('~assets/images/homeModelBg.png') no-repeat center
+          center;
+        background-size: contain;
+        p {
+          &:first-of-type {
+            padding-top: 50px;
+          }
+          &:last-of-type {
+            padding-top: 30px;
+            font-size: 36px;
+            font-family: impact;
+          }
+        }
+      }
+      .limit {
+        background-color: #f34547;
+      }
+      .capital {
+        background-color: #d49724;
+      }
+      .freeze {
+        background-color: #10cb44;
+      }
+    }
+    .right {
+      height: 220px;
+      border-radius: 10px;
+      color: #fff;
+      background: #479ae7 url('~assets/images/homeModelBg.png') no-repeat center
+        center;
+      background-size: contain;
+      .title {
+        font-size: 18px;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        text-align: left;
+        padding-left: 20px;
+      }
+      .creditItemBox {
+        display: flex;
+        font-size: 14px;
+        padding: 0 20px;
+        text-align: left;
+        .creditItem_l,
+        .creditItem_r {
+          flex: 1;
+        }
+        span:last-of-type {
+          font-size: 16px;
+          font-family: impact;
+        }
+      }
+    }
+  }
+  .plan {
+    .planTable {
+      border-radius: 10px;
+    }
+
+    .refund {
+      display: inline-block;
+      border-color: #1989fa;
+      color: #1989fa;
+      height: 30px;
+      border: 1px solid;
+      border-radius: 3px;
+      padding: 0 15px;
+      font-size: 12px;
+      outline: none;
+      background: transparent;
+      cursor: pointer;
+      &:hover {
+        background-color: #1989fa;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// 公共部分
+.product {
+  background-color: #ffffff;
+  padding: 20px;
+  padding-left: 0;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  .item {
+    border-radius: 5px;
+    height: 100%;
+    flex: 1;
+    background-color: pink;
+    margin-left: 20px;
+    padding: 28px;
+    &:nth-child(1) {
+      background: #55a1eb url('~assets/images/blueBox.png') no-repeat center
+        center/cover;
+      .applyBtn {
+        color: #1989fa;
+      }
+    }
+    &:nth-child(2) {
+      background: #0fc944 url('~assets/images/greenBox.png') no-repeat center
+        center/cover;
+      .applyBtn {
+        color: #67c23b;
+      }
+    }
+    &:nth-child(3) {
+      background: #d59926 url('~assets/images/orangeBox.png') no-repeat center
+        center/cover;
+      .applyBtn {
+        color: #eb9f2e;
+      }
+    }
+    &:nth-child(4) {
+      background: #f84f55 url('~assets/images/redBox.png') no-repeat center
+        center/cover;
+      .applyBtn {
+        color: #f54645;
+      }
+    }
+    &:nth-child(5) {
+      background: #4b9be8 url('~assets/images/blueBox.png') no-repeat center
+        center/cover;
+      .applyBtn {
+        color: #1989fa;
+      }
+    }
+    .title {
+      font-size: 22px;
+      line-height: 30px;
+      color: #fff;
+      font-weight: 500;
+    }
+    .rateBox {
+      margin-top: 20px;
+      width: 100%;
+      height: 95px;
+      background: #fff;
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+      padding: 20px;
+      font-weight: 400;
+      color: #909399;
+      .percent {
+        margin: 4px 0;
+        font-size: 26px;
+        color: #1989fa;
+        text-align: center;
+        font-family: impact;
+      }
+      .content {
+        margin: 4px 0;
+        font-size: 18px;
+        color: #f54645;
+        text-align: center;
+      }
+    }
+    .applyBtn {
+      width: 100%;
+      height: 36px;
+      background: #fff;
+      border-radius: 18px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+  }
+}
+
+.el-table {
+  .el-table__header td,
+  .el-table__header th {
+    padding: 6px 0px;
+    text-align: center;
+    color: #909399;
+    font-weight: normal;
+  }
+  .el-table__body td,
+  .el-table__body th {
+    padding: 5px;
+    text-align: center;
+  }
+  tr:nth-child(odd) {
+    background-color: #efedff;
+  }
+  tr:nth-child(even) {
+    background-color: #f4fbff;
+  }
+  .detail {
+    display: inline-block;
+    margin: 0 5px;
+    color: #329acd;
+    cursor: pointer;
+  }
+}
+
+// 企业融资
+.corporate {
+  .recommend_box {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    .credit {
+      font-size: 18px;
+      color: #616266;
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      cursor: pointer;
+      .title {
+        padding: 14px 0 14px 30px;
+        position: relative;
+        &:hover span {
+          color: #1989fa;
+        }
+        i {
+          position: absolute;
+          content: '';
+          display: block;
+          top: 15px;
+          left: 2px;
+          width: 24px;
+          height: 24px;
+          background: url('~assets/images/drop.png') no-repeat center center;
+          background-size: cover;
+          &.active {
+            transform: rotate(-90deg);
+          }
+        }
+        .line {
+          position: absolute;
+          width: 86%;
+          height: 1px;
+          top: 28px;
+          right: 0;
+          background-color: #dcdfe6;
+        }
+      }
+      .content {
+        .product {
+          float: left;
+          margin-bottom: 20px;
+          .item {
+            height: 380px;
+            .title {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 企业融资申请信息
+.receivable,
+.generate {
+  padding: 1px 0;
+  background: #f6f6f6;
+  color: #333;
+  .content {
+    position: relative;
+    // width: 1198px;
+    border: 1px solid transparent;
+    background: #fff;
+    margin: 60px auto;
+    border-radius: 8px;
+    padding: 24px;
+    padding-bottom: 120px;
+    .item {
+      margin-bottom: 20px;
+      .title {
+        margin-bottom: 24px;
+        position: relative;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dcdfe6;
+        font-size: 18px;
+        font-weight: 500;
+        color: #616266;
+      }
+      .info {
+        margin-left: 80px;
+        .el-select {
+          width: 240px;
+        }
+        > div {
+          margin-bottom: 10px;
+        }
+        .addCredit {
+          display: inline-block;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          padding: 0 15px;
+          background: #1989fa;
+          color: #fff;
+          font-size: 14px;
+          border-radius: 4px;
+          margin-left: 130px;
+        }
+        b {
+          width: 130px;
+          display: inline-block;
+          text-align: right;
+          span {
+            line-height: 36px;
+            text-align: right;
+            color: #999;
+            font-size: 14px;
+            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:first-of-type {
+              color: #f00;
+            }
+          }
+        }
+      }
+      .purch {
+        display: flex;
+        .el-table {
+          display: inline-block;
+          .el-table__header td,
+          .el-table__header th {
+            padding: 6px 0px;
+            text-align: center;
+            color: #909399;
+            font-weight: normal;
+            background-color: #f4f5fb;
+          }
+          .el-table__body td,
+          .el-table__body th {
+            padding: 5px;
+            text-align: center;
+          }
+          .cell {
+            padding: 0;
+          }
+          tr:nth-child(odd) {
+            background-color: #fff;
+          }
+          tr:nth-child(even) {
+            background-color: #fff;
+          }
+
+          .detail {
+            display: inline-block;
+            line-height: 38px;
+            padding: 0 18px;
+            background-color: #009688;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+        }
+        .el-select {
+          width: 95px;
+        }
+      }
+      input {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 28px;
+        line-height: 28px;
+        padding: 3px 5px;
+        border: 1px solid #dedede;
+        background: #fff;
+        font-size: 12px;
+        color: #333;
+        border-radius: 2px;
+        &:focus {
+          border-color: #66afe9;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+            0 0 8px rgba(102, 175, 233, 0.6);
+        }
+      }
+      .borrowStart,
+      .borrowEnd {
+        width: 222px;
+        height: 18px;
+        line-height: 18px;
+        padding: 8px;
+        box-sizing: content-box;
+      }
+    }
+    .bills {
+      .title {
+        margin-bottom: 24px;
+        position: relative;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dcdfe6;
+        font-size: 18px;
+        font-weight: 500;
+        color: #616266;
+      }
+      .upload {
+        display: flex;
+        padding-left: 80px;
+        align-items: center;
+        .el-button--small,
+        .el-button--small.is-round {
+          width: 120px;
+          height: 38px;
+          background: #1989fa;
+          font-size: 14px;
+        }
+        .limitSize {
+          margin: 0 20px;
+          color: red;
+          font-size: 16px;
+        }
+      }
+    }
+    .creInformate {
+      .handle {
+        display: flex;
+        line-height: 38px;
+        justify-content: center;
+        .el-upload {
+          input {
+            display: none;
+          }
+          button {
+            display: inline-block;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 18px;
+            background-color: #009688;
+            text-align: center;
+            font-size: 14px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+        }
+        .delPurch {
+          color: #48b2e2;
+          margin-left: 10px;
+        }
+      }
+      .el-upload-list {
+        display: none;
+      }
+    }
+    .submit {
+      display: inline-block;
+      vertical-align: middle;
+      width: 240px;
+      height: 42px;
+      line-height: 42px;
+      text-align: center;
+      margin-top: 30px;
+      background: #1989fa;
+      cursor: pointer;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 4px;
+      position: absolute;
+      right: 24px;
+    }
+  }
+}
+
+// 借款管理
+.borrowing {
+  .box {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    .item {
+      background: url('~assets/images/homeModelBg.png') no-repeat center center;
+      background-size: contain;
+      width: 345px;
+      background-color: pink;
+      height: 200px;
+      color: #fff;
+      border-radius: 10px;
+      .title {
+        margin-top: 50px;
+        font-size: 22px;
+        font-weight: 500;
+      }
+      &:nth-of-type(1) {
+        background-color: #2185dd;
+      }
+      &:nth-of-type(2) {
+        background-color: #d59927;
+      }
+      &:nth-of-type(3) {
+        background-color: #f84f55;
+      }
+      div:last-of-type {
+        padding-top: 30px;
+        font-size: 36px;
+        font-family: impact;
+      }
+      .cur {
+        font-size: 24px;
+      }
+    }
+  }
+  .content {
+    border-radius: 10px;
+    background-color: #fff;
+    .box {
+      padding: 24px 20px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #dcdfe6;
+      span {
+        min-width: 60px;
+        line-height: 36px;
+        color: #616266;
+        font-size: 14px;
+      }
+      a {
+        display: inline-block;
+        line-height: 36px;
+        padding: 0 8px;
+        color: #303133;
+        font-size: 12px;
+        background: #fff;
+        border-right: 1px solid #dcdfe6;
+        border-top: 1px solid #dcdfe6;
+        border-bottom: 1px solid #dcdfe6;
+        &:first-of-type {
+          border-left: 1px solid #dcdfe6;
+          border-radius: 4px 0px 0px 4px;
+        }
+        &.active {
+          background: #e8f3fe;
+          border-color: #a9d2fc;
+          color: #1989fa;
+        }
+        &:hover {
+          background: #e8f3fe;
+          border-color: #a9d2fc;
+          color: #1989fa;
+        }
+      }
+      input {
+        width: 140px;
+        padding: 10px 4px;
+        color: #666;
+        font-size: 12px;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 2px;
+      }
+      button {
+        width: 68px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 0 5px;
+        cursor: pointer;
+        font-size: 14px;
+        background: #fff;
+        border: 1px solid #1989fa;
+        border-radius: 4px;
+        color: #1989fa;
+      }
+    }
+    .paginator {
+      text-align: center;
+      line-height: 28px;
+      padding: 30px 0;
+    }
+  }
+}
+
+// 赎货管理
+.content {
+  background-color: #fff;
+  border-radius: 10px;
+  // padding-top: 14px;
+  .el-tabs__nav-wrap.is-top {
+    padding-left: 20px;
+  }
+  .search {
+    padding: 14px 20px 24px;
+    border-bottom: 1px solid #dcdfe6;
+    span {
+      min-width: 60px;
+      line-height: 36px;
+      color: #616266;
+      font-size: 14px;
+    }
+    input {
+      width: 140px;
+      line-height: 36px;
+      padding: 0 4px;
+      color: #666;
+      font-size: 12px;
+      background: #fff;
+      border: 1px solid #e2e2e2;
+      border-radius: 2px;
+    }
+    button {
+      width: 68px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      padding: 0;
+      margin: 0 0 0 5px;
+      cursor: pointer;
+      font-size: 14px;
+      background: #fff;
+      border: 1px solid #1989fa;
+      border-radius: 4px;
+      color: #1989fa;
+    }
+  }
+  .paginator {
+    text-align: center;
+    line-height: 28px;
+    padding: 30px 0;
+  }
+}
+
+// 合同管理
+.contract {
+  .content {
+    background-color: #fff;
+    align-items: center;
+    border-bottom: 1px solid #dcdfe6;
+    .box {
+      display: flex;
+      padding: 24px 20px;
+      border-bottom: 1px solid #dcdfe6;
+      div {
+        margin-right: 20px;
+      }
+    }
+    span {
+      min-width: 60px;
+      line-height: 36px;
+      color: #616266;
+      font-size: 14px;
+    }
+    .contractInp {
+      width: 140px;
+      line-height: 36px;
+      padding: 0 4px;
+      color: #666;
+      font-size: 12px;
+      background: #fff;
+      border: 1px solid #e2e2e2;
+      border-radius: 2px;
+    }
+    input {
+      padding-right: 15px;
+    }
+    .search {
+      width: 68px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      padding: 0;
+      margin: 0 0 0 5px;
+      cursor: pointer;
+      font-size: 14px;
+      background: #fff;
+      border: 1px solid #1989fa;
+      border-radius: 4px;
+      color: #1989fa;
+    }
+  }
+  .detail {
+    display: inline-block;
+    margin: 0 5px;
+    color: #329acd !important;
+  }
+  .paginator {
+    text-align: center;
+    line-height: 28px;
+    padding: 30px 0;
+  }
+}
